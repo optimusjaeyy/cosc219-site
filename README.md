@@ -8,9 +8,9 @@ Site Contents:
 - A link to my GitHub Pages
 
 GitHub Pages URL:
-[text](https://optimusjaeyy.github.io/cosc219-site/)
+[My GitHub Pages](https://optimusjaeyy.github.io/cosc219-site/)
 
-Note: Creativity was the most challenging part for me in making this site.
+Note: Finding content ideas was the most challenging part for me in making this site.
 
 AI-Use Declaration:
 I did not use any AI in making this site.

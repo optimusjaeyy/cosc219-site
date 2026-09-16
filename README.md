@@ -1,6 +1,6 @@
-# cosc219-site
+# COSC 219 site
 
-This site is my first lab project in COSC 219.
+This site is my first lab project for COSC 219.
 
 Site Contents:
 

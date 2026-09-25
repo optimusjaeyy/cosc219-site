@@ -1,0 +1,172 @@
+:root {
+  --brand: #fff4d6;
+  --ink: #2d2340;
+  --muted: #8a7f99;
+  --space: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f0ff;
+  font-family: Arial, sans-serif;
+  color: var(--ink);
+  line-height: 1.5;
+  font-size: var(--space);
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+h1 {
+  color: #68458a;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  color: #386fa4;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+p,
+ul {
+  background: var(--brand);
+  border-radius: 1rem;
+  padding: var(--space);
+  margin: var(--space) 0;
+  text-align: justify;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  background: #fff4d6;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #d8c99b;
+  padding: 1rem;
+}
+
+th {
+  background: #dceeff;
+  color: var(--ink);
+}
+
+td {
+  background: #fff4d6;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+nav a {
+  color: #386fa4;
+  text-decoration: none;
+  border: 1px #386fa4;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  background: var(--brand);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background: #dceeff;
+}
+
+nav a:focus {
+  outline: 3px solid #68458a;
+  outline-offset: 2px;
+}
+
+button {
+  background: #68458a;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1re;
+}
+
+button:hover {
+  background: #386fa4;
+}
+
+button:focus {
+  outline: 3px solid #68458a;
+  outline-offset: 2px;
+}
+
+input[type="email"],
+[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--muted);
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #68458a;
+  outline-offset: 2px;
+}
+
+fieldset {
+  border: 2px solid #68458a;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+input[type="checkbox"] + label + fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--muted);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: white;
+}
+
+select:focus {
+  outline: 3px solid blue;
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.intro {
+  text-align: center;
+}

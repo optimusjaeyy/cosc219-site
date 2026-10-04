@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header><h1>About Page</h1></header>
     <nav>
-      <a href="index.html">Index</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <header><h1>About</h1></header>
+      <div class="nav-links">
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
-    <main>
-      <section>
+    <main class="page-layout">
+      <section class="main-content">
         <h2>About Me</h2>
         <p>
           I am currently a 2nd year Computer Information Systems (CIS) student
@@ -27,38 +29,43 @@
             make the most of every opportunity and enjoy the present moment.</b
           >
         </p>
+        <div class="content-box">
+          <p><strong>My favorite artwork:</strong></p>
 
-        <p><strong>My favorite artwork:</strong></p>
-
-        <figure>
-          <img
-            src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/437127/2331256/source"
-            alt="Claude Monet's Painting"
-          />
-          <figcaption>
-            Bridge over a Pond of Water Lilies (1899) - Claude Monet
-          </figcaption>
-        </figure>
+          <figure>
+            <img
+              src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/437127/2331256/source"
+              alt="Claude Monet's Painting"
+              width="800"
+              height="600"
+            />
+            <figcaption>
+              Bridge over a Pond of Water Lilies (1899) - Claude Monet
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section>
+      <aside>
         <h2>About My Program</h2>
-        <p>
-          It’s a two-year program where I get to learn about different areas of
-          technology, including software development, networking, databases, and
-          IT. What I like about the program is that it focuses on practical
-          skills that can be used in real-world careers. The knowledge and
-          experience I’m gaining can open up opportunities in many different
-          fields, including business, healthcare, infrastructure, and
-          technology.
-        </p>
-        <a
-          href="https://www.okanagancollege.ca/programs/computer-information-systems-diploma"
-          target="_blank"
-          rel="noopener"
-          >Learn more about Computer Information Systems Diploma</a
-        >
-      </section>
+        <div class="content-box">
+          <p>
+            It’s a two-year program where I get to learn about different areas
+            of technology, including software development, networking,
+            databases, and IT. What I like about the program is that it focuses
+            on practical skills that can be used in real-world careers. The
+            knowledge and experience I’m gaining can open up opportunities in
+            many different fields, including business, healthcare,
+            infrastructure, and technology.
+          </p>
+          <a
+            href="https://www.okanagancollege.ca/programs/computer-information-systems-diploma"
+            target="_blank"
+            rel="noopener"
+            >Learn more about Computer Information Systems Diploma</a
+          >
+        </div>
+      </aside>
     </main>
     <footer></footer>
   </body>

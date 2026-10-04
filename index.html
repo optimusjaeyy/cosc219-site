@@ -7,33 +7,50 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to my Page</h1>
-    </header>
     <nav>
-      <a href="index.html">Index</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <header>
+        <h1>Welcome to my Page</h1>
+      </header>
+      <div class="nav-links">
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
-    <main>
-      <h2>Hello World!</h2>
-      <p class="intro">
-        This is my first lab project for COSC 219. I am excited to build this
-        website and continue improving it by adding more features in future lab
-        projects.
-      </p>
-      <img
-        src="https://cdn.vectorstock.com/i/500p/41/11/happy-stickman-with-thumb-up-vector-60284111.jpg"
-        alt="Happy Stickman"
-      />
-      <p>My Favorite Desserts:</p>
-      <ul>
-        <li>Ice Cream</li>
-        <li>Tiramisu</li>
-        <li>Cheesecake</li>
-      </ul>
+
+    <main class="page-layout">
+      <section class="main-content">
+        <h2>Hello World!</h2>
+
+        <p class="intro">
+          This is my first lab project for COSC 219. I am excited to build this
+          website and continue improving it by adding more features in future
+          lab projects.
+        </p>
+
+        <img
+          src="https://cdn.vectorstock.com/i/500p/41/11/happy-stickman-with-thumb-up-vector-60284111.jpg"
+          alt="Happy Stickman"
+        />
+
+        <div class="content-box">
+          <p>My Favorite Desserts:</p>
+          <ul>
+            <li>Ice Cream</li>
+            <li>Tiramisu</li>
+            <li>Cheesecake</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <h2>Quick Facts</h2>
+        <p>This page is a part of my COSC 219 website.</p>
+        <p>I am using responsive layout techniques for Lab 3.</p>
+      </aside>
     </main>
+
     <footer></footer>
   </body>
 </html>

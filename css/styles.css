@@ -15,77 +15,41 @@ body {
   color: var(--ink);
   line-height: 1.5;
   font-size: var(--space);
-}
-
-main {
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: var(--space);
-}
-
-h1 {
-  color: #68458a;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-h2 {
-  color: #386fa4;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-p,
-ul {
-  background: var(--brand);
-  border-radius: 1rem;
-  padding: var(--space);
-  margin: var(--space) 0;
-  text-align: justify;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-table {
-  margin: 1.5rem auto;
-  border-collapse: separate;
-  background: #fff4d6;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-th,
-td {
-  border: 1px solid #d8c99b;
-  padding: 1rem;
-}
-
-th {
-  background: #dceeff;
-  color: var(--ink);
-}
-
-td {
-  background: #fff4d6;
+  margin: 0;
 }
 
 nav {
+  padding: var(--space);
   text-align: center;
-  margin-bottom: 1.5rem;
+  background: var(--brand);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
+
+nav h1 {
+  color: #68458a;
+  margin: 0 0 var(--space);
+  font-size: 2.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space);
+}
+
 nav a {
   color: #386fa4;
   text-decoration: none;
-  border: 1px #386fa4;
   padding: 0.5rem 1rem;
-  margin: 0 0.2rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  background: var(--brand);
+  background: white;
 }
 
 nav a:hover {
-  text-decoration: underline;
   background: #dceeff;
 }
 
@@ -94,26 +58,154 @@ nav a:focus {
   outline-offset: 2px;
 }
 
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: var(--space);
+}
+
+h1 {
+  color: #68458a;
+  margin-bottom: var(--space);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  color: #386fa4;
+  margin-bottom: var(--space);
+  font-size: 2rem;
+}
+
+p {
+  background: var(--brand);
+  border-radius: 1rem;
+  padding: var(--space);
+  margin: var(--space) 0;
+  text-align: justify;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+  background: var(--brand);
+  border-radius: 1rem;
+  padding: var(--space);
+  margin: var(--space) 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box p,
+.content-box ul,
+.content-box figure {
+  background: transparent;
+  box-shadow: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.content-box p {
+  text-align: justify;
+}
+
+.intro {
+  text-align: center;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.page-layout aside {
+  align-self: start;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space);
+}
+
+.cards article {
+  height: 100%;
+  min-width: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-box {
+  background: var(--brand);
+  border-radius: 1rem;
+  padding: var(--space);
+  margin: 0;
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-box p,
+.project-box ul,
+.project-box ol {
+  background: transparent;
+  box-shadow: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+/*Project table*/
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #e8f1ff;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  color: #386fa4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+}
+
+th,
+td {
+  border: 1px solid #b8cce6;
+  padding: 1rem;
+  overflow-wrap: anywhere;
+}
+
+th {
+  background: #dceeff;
+  color: var(--ink);
+}
+
+td {
+  background: #f3f7ff;
+}
+
+/*Buttons*/
 button {
   background: #68458a;
   color: white;
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 1.25rem;
-  font-size: 1re;
+  font-size: 1rem;
 }
 
 button:hover {
   background: #386fa4;
 }
 
-button:focus {
-  outline: 3px solid #68458a;
-  outline-offset: 2px;
-}
-
+/*Form controls*/
 input[type="email"],
-[type="text"],
+input[type="text"],
 textarea {
   width: 100%;
   padding: 0.75rem;
@@ -141,11 +233,6 @@ fieldset {
   padding: 1rem;
 }
 
-input[type="checkbox"] + label + fieldset {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
 select {
   width: 100%;
   padding: 0.75rem;
@@ -155,16 +242,41 @@ select {
   background: white;
 }
 
-select:focus {
-  outline: 3px solid blue;
-  outline-offset: 2px;
-}
-
+/*Images*/
 img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 38rem) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .page-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 58rem) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 37.99rem) {
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav a {
+    display: block;
+  }
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 .intro {

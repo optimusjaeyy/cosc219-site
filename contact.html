@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header><h1>Contact Page</h1></header>
-
     <nav>
-      <a href="index.html">Index</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <header><h1>Contact</h1></header>
+
+      <div class="nav-links">
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
 
     <main>
@@ -46,46 +48,61 @@
 
         <fieldset>
           <legend>Contact</legend>
-          <input
-            type="radio"
-            id="contactEmail"
-            name="contact"
-            value="email"
-            required
-          />
-          <label for="contactEmail">Email</label>
+          <div class="choice">
+            <input
+              type="radio"
+              id="contactEmail"
+              name="contact"
+              value="email"
+              required
+            />
+            <label for="contactEmail">Email</label>
+          </div>
 
-          <input
-            type="radio"
-            id="contactPhone"
-            name="contact"
-            value="phone"
-            required
-          />
-          <label for="contactPhone">Phone</label>
+          <div class="choice">
+            <input
+              type="radio"
+              id="contactPhone"
+              name="contact"
+              value="phone"
+              required
+            />
+            <label for="contactPhone">Phone</label>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend>Interests</legend>
 
-          <input type="checkbox" id="webdev" name="interests" value="webdev" />
-          <label for="webdev">Web Development</label>
+          <div class="choice">
+            <input
+              type="checkbox"
+              id="webdev"
+              name="interests"
+              value="webdev"
+            />
+            <label for="webdev">Web Development</label>
+          </div>
 
-          <input
-            type="checkbox"
-            id="datasci"
-            name="interests"
-            value="datasci"
-          />
-          <label for="datasci">Data Science</label>
+          <div class="choice">
+            <input
+              type="checkbox"
+              id="datasci"
+              name="interests"
+              value="datasci"
+            />
+            <label for="datasci">Data Science</label>
+          </div>
 
-          <input
-            type="checkbox"
-            id="gamedev"
-            name="interests"
-            value="gamedev"
-          />
-          <label for="gamedev">Game Development</label>
+          <div class="choice">
+            <input
+              type="checkbox"
+              id="gamedev"
+              name="interests"
+              value="gamedev"
+            />
+            <label for="gamedev">Game Development</label>
+          </div>
         </fieldset>
 
         <p>
@@ -98,5 +115,6 @@
         </p>
       </form>
     </main>
+    <footer></footer>
   </body>
 </html>
